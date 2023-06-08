@@ -1,12 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Web Revou</title>
+
+    <link rel="stylesheet" href="assets/style/index.css" />
 </head>
+
 <body>
-    
+    <header>
+        <div class="logo">
+            <img src="assets/images/gelato.png" alt="logo" />
+        </div>
+        <div class="primary">
+            <h1>Gellashop</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#satu">Home</a></li>
+                <li><a href="./profile.html">My Profile</a></li>
+                <li><a href="#dua">About Us</a></li>
+                <li><a href="#tiga">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="homepage" id="satu">
+        <div class="txt-home">
+            <div class="txt-box">
+                <h1 class="txt-title">Hi <span id="nama"></span> !</h1>
+                <h1>Welcome to website</h1>
+                <p>Ini adalah website latihan anda pada course belajar Revou</p>
+            </div>
+        </div>
+        <div class="img-home">
+            <img src="assets/images/girl.png" alt="girl" />
+        </div>
+    </div>
+
+    <div class="profile">
+        <div class="judul">
+            <h2 id="dua">ABOUT US</h2>
+        </div>
+        <div class="org">
+            <div class="box-foto">
+                <div class="foto">
+                    <img src="assets/images/satu.png" alt="" />
+                    <div class="desc">
+                        <p class="name">Roy Mustang</p>
+                        <p>CEO</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box-foto">
+                <div class="foto">
+                    <img src="assets/images/dua.png" alt="" />
+                    <div class="desc">
+                        <p class="name">Michael Angelo</p>
+                        <p>Manager</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box-foto">
+                <div class="foto">
+                    <img src="assets/images/tiga.png" alt="" />
+                    <div class="desc">
+                        <p class="name">Angel Dominique</p>
+                        <p>Staff</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="message">
+        <div class="judul">
+            <h2 id="tiga">MESSAGE US</h2>
+        </div>
+
+        <div class="message-box">
+            <div class="full-ms">
+                <form action="" name="message-form" onsubmit="return validateForm()">
+                    <div class="jdl-ms">
+                        <p>Message us here!</p>
+                    </div>
+                    <div class="form">
+                        <div class="form-row">
+                            <label for="fullname">Full Name</label>
+                            <input type="text" id="fullname" placeholder="Full Name" name="full-name" />
+                        </div>
+                        <div class="form-row">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="abc123@mail.com" name="e-mail" />
+                        </div>
+                        <div class="form-row">
+                            <label for="email">Phone</label>
+                            <input type="tel" id="Phone" placeholder="08xxx" name="telp" />
+                        </div>
+                        <div class="form-row">
+                            <label for="pesan">Message</label>
+                            <textarea name="pesan" id="pesan" cols="30" rows="10"
+                                placeholder="Type your message here.."></textarea>
+                        </div>
+                        <div class="form-row">
+                            <button type="submit" value="submit">Send</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="validasi">
+                    <div class="jdl-ms">
+                        <p>See your message here!</p>
+                    </div>
+                    <div class="result">
+                        <div class="result-row">
+                            <p>Full Name :</p>
+                            <span id="sender-fn"></span>
+                        </div>
+                        <div class="result-row">
+                            <p>Email :</p>
+                            <span id="sender-em"></span>
+                        </div>
+                        <div class="result-row">
+                            <p>Phone :</p>
+                            <span id="sender-tl"></span>
+                        </div>
+                        <div class="result-row">
+                            <p>Message :</p>
+                            <div id="sender-ms" class="text-area"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            latihan Website Revou &#169; 2023. Designed and Coded by
+            <span>Irfants.</span>
+        </p>
+    </footer>
 </body>
+
+<script src="assets/js/script.js"></script>
+
 </html>
